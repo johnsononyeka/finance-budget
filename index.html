@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Finance Dashboard</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <div class="layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="logo">Finance</h2>
+            <ul>
+                <li class="active">Dashboard</li>
+                <li>Accounts</li>
+                <li>Transactions</li>
+                <li>Cash Flow</li>
+                <li>Reports</li>
+                <li>Budget</li>
+                <li>Recurring</li>
+                <li>Goals</li>
+                <li>Investments</li>
+                <li>Advice</li>
+            </ul>
+        </aside>
+
+        <!-- Main -->
+        <main class="content">
+
+            <!-- Top cards -->
+            <section class="grid-2">
+                <div class="card">
+                    <h3>Budget December 2025</h3>
+
+                    <div class="bar">
+                        <span>Income</span>
+                            <div class="progress"><div class="fill" style="width:50%"></div></div>
+                                <small>$4,200 earned • $4,210 remaining</small>
+                            </div>
+
+                            <div class="bar">
+                                <span>Expenses</span>
+                                    <div class="progress"><div class="fill green" style="width:68%"></div></div>
+                                        <small>$3,508 spent • $1,682 remaining</small>
+                                    </div>
+                            </div>
+
+                            <div class="card">
+                                <h3>Spending This Month</h3>
+                                <canvas id="spendingChart"></canvas>
+                            </div>
+                </section>
+
+                <!-- Middle -->
+                <section class="grid-2">
+                    <div class="card">
+                        <h3>Net Worth</h3>
+                            <p class="highlight">$687K <span>▲ 3.5%</span></p>
+                            <canvas id="networthChart"></canvas>
+                    </div>
+
+                    <div class="card">
+                        <h3>Recent Transactions</h3>
+                        <ul class="transactions">
+                            <li><span>Shopping</span><b>+$10.00</b></li>
+                            <li><span>Transfer</span><b>+$50.00</b></li>
+                            <li><span>Entertainment</span><b>+$10.00</b></li>
+                            <li><span>Streaming</span><b>+$10.00</b></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Bottom -->
+                <section class="grid-2">
+                    <div class="card">
+                        <h3>Goals</h3>
+                        <p>Emergency Fund</p>
+                        <div class="progress">
+                            <div class="fill green" style="width:90%"></div>
+                        </div>
+                        <small>$50,108 saved</small>
+                    </div>
+
+                    <div class="card">
+                        <h3>Recurring</h3>
+                        <p>Mortgage</p>
+                        <b>$339.00 • in 7 days</b>
+                    </div>
+                </section>
+
+          </main>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
